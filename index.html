@@ -4,6 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yayasan Leman Sulaeman Indonesia</title>
+<style>
+  nav {
+  background: #134e4a;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  color: white;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
 
   <style>
     body {
@@ -67,39 +94,87 @@
 
 <nav>
   <a href="#tentang">Tentang</a>
+  <a href="#visi-misi">Visi & Misi</a>
   <a href="#program">Program</a>
   <a href="#donasi">Donasi</a>
   <a href="#lokasi">Lokasi</a>
   <a href="#kontak">Kontak</a>
 </nav>
-
-<section id="tentang">
+  
+<section id="Tentang">
   <h2>Tentang Kami</h2>
   <p>
-    Yayasan Leman Sulaeman Indonesia adalah lembaga sosial yang bergerak
-    di bidang pendidikan, sosial, dan kemanusiaan untuk masyarakat Indonesia.
+    Yayasan Leman Sulaeman Indonesia adalah lembaga sosial yang bergerak di bidang pendidikan, sosial, dan kemanusiaan. Yayasan ini didirikan dengan semangat kepedulian dan pengabdian untuk membantu meningkatkan kualitas hidup masyarakat, khususnya mereka yang membutuhkan.
+Kami berkomitmen untuk menjalankan setiap program secara amanah, transparan, dan berkelanjutan, dengan fokus pada pemberdayaan masyarakat dan penanaman nilai-nilai kemanusiaan. Melalui kerja sama dengan berbagai pihak, Yayasan Leman Sulaeman Indonesia berupaya menghadirkan aksi nyata yang memberikan manfaat jangka panjang bagi masyarakat Indonesia.
+Dengan prinsip mengabdi untuk negeri, yayasan ini terus berupaya menjadi wadah kebaikan yang dapat dipercaya dan dirasakan manfaatnya oleh masyarakat luas..
   </p>
+</section>
+
+  <section id="Visi-misi">
+  <h2>Visi & Misi</h2>
+
+  <h3>Visi</h3>
+  <p>
+    Menjadi yayasan yang amanah, profesional, dan berdaya guna dalam meningkatkan
+    kesejahteraan masyarakat Indonesia melalui kegiatan pendidikan, sosial, dan kemanusiaan.
+  </p>
+
+  <h3>Misi</h3>
+  <ol>
+    <li>Menyelenggarakan program pendidikan yang mendukung peningkatan kualitas sumber daya manusia.</li>
+    <li>Melaksanakan kegiatan sosial untuk membantu masyarakat yang membutuhkan secara tepat sasaran.</li>
+    <li>Menjalankan aksi kemanusiaan yang responsif dan berkelanjutan.</li>
+    <li>Membangun kerja sama dengan berbagai pihak untuk memperluas manfaat dan dampak sosial.</li>
+    <li>Mengelola yayasan secara amanah, transparan, dan bertanggung jawab.</li>
+  </ol>
 </section>
 
 <section id="program">
   <h2>Program Yayasan</h2>
+
   <div class="cards">
     <div class="card">
       <h3>📚 Pendidikan</h3>
-      <p>Bantuan pendidikan dan pembinaan generasi muda.</p>
+      <p>
+        Program pendidikan bertujuan untuk meningkatkan kualitas sumber daya manusia
+        melalui bantuan pendidikan, pembinaan, dan pendampingan bagi masyarakat yang membutuhkan.
+      </p>
+      <ul>
+        <li>Bantuan pendidikan</li>
+        <li>Pembinaan karakter</li>
+        <li>Pendampingan belajar</li>
+      </ul>
     </div>
+
     <div class="card">
       <h3>🤝 Sosial</h3>
-      <p>Bantuan sosial untuk masyarakat yang membutuhkan.</p>
+      <p>
+        Program sosial difokuskan pada kepedulian terhadap kondisi masyarakat
+        melalui bantuan yang tepat sasaran dan berkelanjutan.
+      </p>
+      <ul>
+        <li>Santunan sosial</li>
+        <li>Bantuan sembako</li>
+        <li>Dukungan untuk dhuafa dan lansia</li>
+      </ul>
     </div>
+
     <div class="card">
       <h3>🚑 Kemanusiaan</h3>
-      <p>Respon cepat terhadap bencana dan kondisi darurat.</p>
+      <p>
+        Program kemanusiaan dijalankan sebagai bentuk respon cepat
+        terhadap kondisi darurat dan bencana.
+      </p>
+      <ul>
+        <li>Tanggap bencana</li>
+        <li>Bantuan darurat</li>
+        <li>Penyaluran bantuan kemanusiaan</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="donasi">
+<section id="Donasi">
   <h2>Donasi</h2>
   <p>
     Salurkan donasi Anda melalui:
@@ -126,8 +201,12 @@
 </section>
 
 <footer>
-  <p>© 2026 Yayasan Leman Sulaeman Indonesia</p>
+  <p>© <span id="year"></span> Yayasan Leman Sulaeman Indonesia. Hak cipta dilindungi.</p>
 </footer>
 
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
 </body>
 </html>
