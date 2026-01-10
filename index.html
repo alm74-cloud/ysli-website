@@ -1,222 +1,76 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yayasan Leman Sulaeman Indonesia</title>
-<style>
-  nav {
-  background: #134e4a;
-  padding: 12px;
-}
-
-nav a {
-  color: white;
-  margin: 0 14px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-nav a {
-  color: white;
-  margin: 0 14px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-    header {
-      background: #0f766e;
-      color: white;
-      padding: 24px;
-      text-align: center;
-    }
-    nav {
-      background: #134e4a;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,.1);
-    }
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: 0;
-      border-radius: 12px;
-    }
-    footer {
-      background: #0f766e;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="Website resmi Yayasan Leman Sulaeman Indonesia" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body>
-
-<header>
-  <h1>Yayasan Leman Sulaeman Indonesia</h1>
-  <p>Mengabdi untuk Negeri</p>
-</header>
-
-<nav>
-  <a href="#tentang">Tentang</a>
-  <a href="#visi-misi">Visi & Misi</a>
-  <a href="#program">Program</a>
-  <a href="#donasi">Donasi</a>
-  <a href="#lokasi">Lokasi</a>
-  <a href="#kontak">Kontak</a>
-</nav>
-  
-<section id="Tentang">
-  <h2>Tentang Kami</h2>
-  <p>
-    Yayasan Leman Sulaeman Indonesia adalah lembaga sosial yang bergerak di bidang pendidikan, sosial, dan kemanusiaan. Yayasan ini didirikan dengan semangat kepedulian dan pengabdian untuk membantu meningkatkan kualitas hidup masyarakat, khususnya mereka yang membutuhkan.
-Kami berkomitmen untuk menjalankan setiap program secara amanah, transparan, dan berkelanjutan, dengan fokus pada pemberdayaan masyarakat dan penanaman nilai-nilai kemanusiaan. Melalui kerja sama dengan berbagai pihak, Yayasan Leman Sulaeman Indonesia berupaya menghadirkan aksi nyata yang memberikan manfaat jangka panjang bagi masyarakat Indonesia.
-Dengan prinsip mengabdi untuk negeri, yayasan ini terus berupaya menjadi wadah kebaikan yang dapat dipercaya dan dirasakan manfaatnya oleh masyarakat luas..
-  </p>
-</section>
-
-  <section id="Visi-misi">
-  <h2>Visi & Misi</h2>
-
-  <h3>Visi</h3>
-  <p>
-    Menjadi yayasan yang amanah, profesional, dan berdaya guna dalam meningkatkan
-    kesejahteraan masyarakat Indonesia melalui kegiatan pendidikan, sosial, dan kemanusiaan.
-  </p>
-
-  <h3>Misi</h3>
-  <ol>
-    <li>Menyelenggarakan program pendidikan yang mendukung peningkatan kualitas sumber daya manusia.</li>
-    <li>Melaksanakan kegiatan sosial untuk membantu masyarakat yang membutuhkan secara tepat sasaran.</li>
-    <li>Menjalankan aksi kemanusiaan yang responsif dan berkelanjutan.</li>
-    <li>Membangun kerja sama dengan berbagai pihak untuk memperluas manfaat dan dampak sosial.</li>
-    <li>Mengelola yayasan secara amanah, transparan, dan bertanggung jawab.</li>
-  </ol>
-</section>
-
-<section id="program">
-  <h2>Program Yayasan</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>📚 Pendidikan</h3>
-      <p>
-        Program pendidikan bertujuan untuk meningkatkan kualitas sumber daya manusia
-        melalui bantuan pendidikan, pembinaan, dan pendampingan bagi masyarakat yang membutuhkan.
-      </p>
-      <ul>
-        <li>Bantuan pendidikan</li>
-        <li>Pembinaan karakter</li>
-        <li>Pendampingan belajar</li>
-      </ul>
+<body class="font-sans text-gray-800">  <!-- HEADER -->  <header class="bg-white shadow-md border-t-4 border-red-600 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-3">
+        <img src="logo-yayasan.png" alt="Logo Yayasan Leman Sulaeman Indonesia" class="h-10 w-auto" />
+        <h1 class="text-xl font-bold">Yayasan Leman Sulaeman Indonesia</h1>
+      </div>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#beranda" class="hover:text-yellow-500">Beranda</a>
+        <a href="#tentang" class="hover:text-yellow-500">Tentang Kami</a>
+        <a href="#program" class="hover:text-yellow-500">Program</a>
+        <a href="#kontak" class="hover:text-yellow-500">Kontak</a>
+      </nav>
     </div>
-
-    <div class="card">
-      <h3>🤝 Sosial</h3>
-      <p>
-        Program sosial difokuskan pada kepedulian terhadap kondisi masyarakat
-        melalui bantuan yang tepat sasaran dan berkelanjutan.
+  </header>  <!-- HERO -->  <section id="beranda" class="bg-blue-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-24 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Membangun Pendidikan dan Kepedulian Sosial
+      </h2>
+      <p class="max-w-2xl mx-auto text-lg">
+        Yayasan Leman Sulaeman Indonesia berkomitmen untuk berkontribusi bagi masyarakat melalui pendidikan dan kegiatan sosial.
       </p>
-      <ul>
-        <li>Santunan sosial</li>
-        <li>Bantuan sembako</li>
-        <li>Dukungan untuk dhuafa dan lansia</li>
-      </ul>
     </div>
-
-    <div class="card">
-      <h3>🚑 Kemanusiaan</h3>
-      <p>
-        Program kemanusiaan dijalankan sebagai bentuk respon cepat
-        terhadap kondisi darurat dan bencana.
-      </p>
-      <ul>
-        <li>Tanggap bencana</li>
-        <li>Bantuan darurat</li>
-        <li>Penyaluran bantuan kemanusiaan</li>
-      </ul>
+  </section>  <!-- TENTANG -->  <section id="tentang" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h3 class="text-3xl font-bold mb-4">Tentang Yayasan</h3>
+        <p class="leading-relaxed">
+          Yayasan Leman Sulaeman Indonesia adalah organisasi nirlaba yang bergerak di bidang pendidikan, sosial, dan kemanusiaan.
+          Kami hadir untuk memberikan manfaat nyata dan berkelanjutan bagi masyarakat Indonesia.
+        </p>
+      </div>
+      <div class="bg-yellow-50 rounded-2xl p-6">
+        <ul class="space-y-3">
+          <li>✔ Transparan dan Akuntabel</li>
+          <li>✔ Berorientasi Sosial</li>
+          <li>✔ Berkelanjutan</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
-
-<section id="Donasi">
-  <h2>Donasi</h2>
-  <p>
-    Salurkan donasi Anda melalui:
-  </p>
-  <ul>
-    <li>Bank BNI</li>
-    <li>No. Rekening: XXXXXXXX</li>
-    <li>Atas Nama: Yayasan Leman Sulaeman Indonesia</li>
-  </ul>
-</section>
-
-<section id="+62856-9782-8459">
-  <h2>Lokasi Kami</h2>
-  <iframe
-    <section id="lokasi">
-  <h2>Lokasi Kami</h2>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.6173660475883!2d107.44492391532887!3d-6.327617795319532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69657ebe2b0bad%3A0x83f1bb4bc9b1264!2sYAYASAN%20%28LSI%29%20Leman%20Sulaeman%20Indonesia!5e0!3m2!1sid!2sid!4v170xxxYourIDHere!5m2!1sid!2sid"
-    width="100%"
-    height="450"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-     <p>Alamat: Jalan sambirata, Kota Karawang, Jawa Barat, Indonesia</p>
-  <a href="https://goo.gl/maps/P3QUAPaDZUJLfwFf8" target="_blank">Buka di Google Maps</a>
-</section>
-
-<section id="kontak">
-  <h2>Kontak</h2>
-  <p>📞 WhatsApp: +62 857-8152-0944</p>
-  <p>📧 Email: info@yaysanlsi.or.id</p>
-</section>
-
-<footer>
-  <p>© <span id="year"></span> Yayasan Leman Sulaeman Indonesia. Hak cipta dilindungi.</p>
-</footer>
-
-  <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-  
-</body>
+  </section>  <!-- PROGRAM -->  <section id="program" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">Program Kami</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-red-600">
+          <h4 class="font-semibold text-xl mb-2">Pendidikan</h4>
+          <p class="text-sm text-gray-600">Dukungan pendidikan dan pembinaan generasi muda.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-red-600">
+          <h4 class="font-semibold text-xl mb-2">Sosial</h4>
+          <p class="text-sm text-gray-600">Kegiatan sosial dan bantuan untuk masyarakat.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-red-600">
+          <h4 class="font-semibold text-xl mb-2">Kemanusiaan</h4>
+          <p class="text-sm text-gray-600">Aksi kemanusiaan dan kepedulian terhadap sesama.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- KONTAK -->  <section id="kontak" class="py-20 bg-yellow-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Kontak Kami</h3>
+      <p>Email: Email : lemansulaeman1971@gmail.com</p>
+      <p>Alamat: Indonesia</p>
+    </div>
+  </section>  <!-- FOOTER -->  <footer class="bg-blue-900 text-yellow-200 py-8 text-center">
+    <p>© 2026 Yayasan Leman Sulaeman Indonesia</p>
+  </footer></body>
 </html>
