@@ -27,10 +27,12 @@ nav {
 }
 
 nav a {
-  padding: 3px 1px;                 /* PALING TIPIS */
-  font-size: 12px;                  /* KECIL TAPI MASIH TERBACA */
+  padding: 3px 1px;
+  font-size: 12px;
+  font-weight: 700;      /* TEBAL */
   line-height: 1;
   border-radius: 3px;
+  color: #fff;
 }
 /* HEADER */
 .header {
