@@ -1,272 +1,59 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yayasan Leman Sulaeman Indonesia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yayasan Leman Sulaeman Indonesia</title>
 
-<link rel="icon" type="image/png" href="favicon.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-}
-
-/* NAVBAR */
-nav {
-  background: #8b0000;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  margin: 5px 10px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-/* HEADER */
-.header {
-  background: #fff;
-  text-align: center;
-  padding: 30px 20px;
-}
-.header img {
-  max-width: 120px;
-}
-.header h1 {
-  margin: 10px 0 5px;
-}
-.header h2 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-/* SECTION */
-section {
-  background: #fff;
-  margin: 20px;
-  padding: 40px 20px;
-  border-radius: 8px;
-}
-section h3 {
-  color: #8b0000;
-  margin-top: 0;
-}
-
-/* STRUKTUR */
-.org-chart { margin-top: 20px; }
-.level {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.box {
-  border-radius: 6px;
-  padding: 12px 16px;
-  margin: 10px;
-  min-width: 200px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-}
-.title { font-weight: bold; margin-bottom: 5px; }
-
-.ketua-umum { background: #ffd966; }
-.pembina, .pengawas { background: #f4a7b9; }
-.sekretaris, .bendahara { background: #f6b26b; }
-
-/* PROGRAM */
-.program-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-.program {
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 6px;
-  flex: 1;
-  min-width: 200px;
-}
-
-/* FORM */
-form {
-  max-width: 400px;
-  margin: auto;
-}
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-button {
-  background: #8b0000;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button:hover {
-  background: #a00000;
-}
-
-/* FOOTER */
-footer {
-  background: #8b0000;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  font-size: 13px;
-}
-
-/* FLOATING WA */
-.wa-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: #fff;
-  border-radius: 50px;
-  padding: 12px 18px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  z-index: 999;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  section { margin: 10px; }
-  .box { min-width: 90%; }
-}
-</style>
+  <!-- CSS Utama -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <ul>
-    <li><a href="#beranda">Beranda</a></li>
-    <li><a href="#tentang">Tentang</a></li>
-    <li><a href="#visi">Visi & Misi</a></li>
-    <li><a href="#struktur">Struktur</a></li>
-    <li><a href="#program">Program</a></li>
-    <li><a href="#donasi">Donasi</a></li>
-    <li><a href="#kontak">Kontak</a></li>
-    <li><a href="#alamat">Alamat</a></li>
-  </ul>
-</nav>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="active">Beranda</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="visi-misi.html">Visi & Misi</a>
+    <a href="struktur.html">Struktur</a>
+    <a href="program.html">Program</a>
+    <a href="donasi.html">Donasi</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
 
-<!-- BERANDA -->
-<div class="header" id="beranda">
-  <img src="logo-yayasan.png" alt="Logo Yayasan">
-  <h1>YAYASAN LEMAN SULAEMAN INDONESIA</h1>
-  <h2>Pendidikan • Sosial • Kemanusiaan</h2>
-</div>
-
-<section id="tentang">
-  <h3>Tentang Kami</h3>
-  <p>Yayasan yang bergerak di bidang pendidikan, sosial, dan kemanusiaan.</p>
-</section>
-
-<section id="visi">
-  <h3>Visi & Misi</h3>
-  <b>Visi</b>
-  <p>Mewujudkan masyarakat berpendidikan dan peduli.</p>
-  <b>Misi</b>
-  <ul>
-    <li>Pendidikan</li>
-    <li>sosial</li>
-    <li>Kemanusiaan</li>
-  </ul>
-</section>
-
-<section id="struktur">
-  <h3>Struktur Organisasi</h3>
-  <div class="org-chart">
-    <div class="level">
-      <div class="box ketua-umum"><div class="title">Ketua Umum</div>Leman Sulaeman, S.Pd.I</div>
-    </div>
-    <div class="level">
-      <div class="box pembina"><div class="title">Pembina</div>M. Dasir<br>Ropei</div>
-      <div class="box pengawas"><div class="title">Pengawas</div>Deden<br>Desi Ratnasari</div>
-    </div>
-    <div class="level">
-      <div class="box sekretaris"><div class="title">Sekretaris</div>Liya Septiani</div>
-      <div class="box bendahara"><div class="title">Bendahara</div>Dewi</div>
-    </div>
+  <!-- HEADER -->
+  <div class="header">
+    <img src="logo-yayasan.png" alt="Logo Yayasan">
+    <h1>YAYASAN LEMAN SULAEMAN INDONESIA</h1>
+    <p>Pendidikan • Sosial • Kemanusiaan</p>
   </div>
-</section>
 
-<section id="program">
-  <h3>Program</h3>
-  <div class="program-list">
-    <div class="program"><b>Pendidikan</b><p>Pendidikan Formal dan Non Formal,Seminar dan Riset pengembangan</p></div>
-    <div class="program"><b>Sosial</b><p>Kesehatan & Bantuan</p></div>
-    <div class="program"><b>Kemanusiaan</b><p>Bencana & kemanusiaan</p></div>
-  </div>
-</section>
+  <!-- KONTEN -->
+  <section>
+    <h2>Selamat Datang</h2>
+    <p>
+      Selamat datang di website resmi Yayasan Leman Sulaeman Indonesia.
+      Kami bergerak di bidang pendidikan, sosial, dan kemanusiaan
+      untuk memberikan manfaat bagi masyarakat luas.
+    </p>
+  </section>
 
-<section id="donasi">
-  <h3>Form Donasi</h3>
-  <form onsubmit="kirimDonasi(); return false;">
-    <input id="nama" placeholder="Nama Donatur" required><br><br>
-    <input id="nominal" placeholder="Nominal (Rp)" required><br><br>
-    <input id="bank" placeholder="Bank Pengirim" required><br><br>
-    <textarea id="pesan" placeholder="Pesan / Doa"></textarea><br><br>
-    <button type="submit">Kirim via WhatsApp</button>
-  </form>
-  <p><b>BJB – 0116-6436-1810-0</b><br>A/N Yayasan Leman Sulaeman Indonesia</p>
-</section>
+  <!-- WHATSAPP FLOATING -->
+  <a
+    href="https://wa.me/628123456789?text=Assalamualaikum,%20saya%20ingin%20bertanya"
+    target="_blank"
+    class="wa-float">
+    WhatsApp
+  </a>
 
-<section id="kontak">
-  <h3>Kontak</h3>
-  <form action="mailto:lemansulaeman1971@gmail.com" method="post" enctype="text/plain">
-    <input name="Nama" placeholder="Nama" required><br><br>
-    <input name="Email" placeholder="Email" required><br><br>
-    <textarea name="Pesan" placeholder="Pesan" required></textarea><br><br>
-    <button type="submit">Kirim Email</button>
-  </form>
-</section>
-
-<section id="alamat">
-  <h3>Alamat</h3>
-  <p>Alamat : Jl. Sambirata, Desa Sukajaya RT.011. RW.03 Kecamatan Cilamaya Kulon Kabupaten Karawang 41384. 
-Propinsi Jawa Barat<br>Indonesia</p>
-</section>
-
-<footer>
-  © 2026 Yayasan Leman Sulaeman Indonesia
-</footer>
-
-<a class="wa-float"
-href="https://wa.me/6285781520944?text=Assalamualaikum%20saya%20ingin%20bertanya%20tentang%20donasi"
-target="_blank">💬 WhatsApp</a>
-
-<script>
-function kirimDonasi() {
-  let t = `Assalamualaikum,%0ANama: ${nama.value}%0ANominal: ${nominal.value}%0ABank: ${bank.value}%0APesan: ${pesan.value}`;
-  window.open("https://wa.me/6285781520944?text=" + t);
-}
-</script>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Yayasan Leman Sulaeman Indonesia
+  </footer>
 
 </body>
-  </html>
+</html>
