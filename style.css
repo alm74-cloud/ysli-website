@@ -16,10 +16,10 @@ body {
 /* NAVBAR */
 nav {
   background: #8b0000;
-  padding: 12px;
+  padding: 6px 8px;          /* DIPERKECIL */
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 2 BARIS */
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;                  /* JARAK DIPERKECIL */
   text-align: center;
   position: sticky;
   top: 0;
@@ -27,18 +27,9 @@ nav {
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-nav a:hover,
-nav a.active {
-  background: #a80000;
-  transform: translateY(-2px);
+  padding: 6px 4px;          /* LINK LEBIH TIPIS */
+  font-size: 14px;
+  line-height: 1.2;
 }
 
 /* HEADER */
