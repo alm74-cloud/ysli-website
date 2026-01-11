@@ -201,4 +201,52 @@ footer {
   .header h1 {
     font-size: 22px;
   }
+/* ===== STRUKTUR ORGANISASI ===== */
+.org-chart {
+  text-align: center;
 }
+
+.org-chart .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.org-chart .box {
+  border-radius: 6px;
+  min-width: 200px;
+  max-width: 240px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.org-chart .box strong {
+  display: block;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.org-chart .sub {
+  padding: 6px;
+  font-size: 14px;
+}
+
+/* WARNA */
+.pink { background: #f7a1c4; }
+.yellow { background: #f4e04d; }
+.blue { background: #3fa9f5; color: #fff; }
+.orange { background: #f4a261; }
+
+.main {
+  border: 3px solid #333;
+}
+
+/* GARIS PENGHUBUNG */
+.line {
+  width: 3px;
+  height: 40px;
+  background: #333;
+  margin: 0 auto;
+     }
