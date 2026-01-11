@@ -16,10 +16,10 @@ body {
 /* NAVBAR */
 nav {
   background: #8b0000;
-  padding: 4px 4px;              /* SANGAT TIPIS */
+  padding: 2px 2px;                 /* PALING TIPIS */
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* LEBIH BANYAK KE SAMPING */
-  gap: 4px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
   text-align: center;
   position: sticky;
   top: 0;
@@ -27,10 +27,10 @@ nav {
 }
 
 nav a {
-  padding: 4px 2px;              /* LINK SANGAT TIPIS */
-  font-size: 13px;
-  line-height: 1.1;
-  border-radius: 4px;
+  padding: 3px 1px;                 /* PALING TIPIS */
+  font-size: 12px;                  /* KECIL TAPI MASIH TERBACA */
+  line-height: 1;
+  border-radius: 3px;
 }
 /* HEADER */
 .header {
