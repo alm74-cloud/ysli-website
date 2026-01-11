@@ -16,10 +16,10 @@ body {
 /* NAVBAR */
 nav {
   background: #8b0000;
-  padding: 6px 8px;          /* DIPERKECIL */
+  padding: 4px 4px;              /* SANGAT TIPIS */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;                  /* JARAK DIPERKECIL */
+  grid-template-columns: repeat(4, 1fr); /* LEBIH BANYAK KE SAMPING */
+  gap: 4px;
   text-align: center;
   position: sticky;
   top: 0;
@@ -27,11 +27,11 @@ nav {
 }
 
 nav a {
-  padding: 6px 4px;          /* LINK LEBIH TIPIS */
-  font-size: 14px;
-  line-height: 1.2;
+  padding: 4px 2px;              /* LINK SANGAT TIPIS */
+  font-size: 13px;
+  line-height: 1.1;
+  border-radius: 4px;
 }
-
 /* HEADER */
 .header {
   background: #fff;
