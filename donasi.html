@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donasi | Yayasan Leman Sulaeman Indonesia</title>
+
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="visimisi.html">Visi &amp; Misi</a>
+    <a href="struktur.html">Struktur</a>
+    <a href="program.html">Program</a>
+    <a href="donasi.html" class="active">Donasi</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Donasi</h1>
+    <p>Salurkan kebaikan Anda melalui Yayasan Leman Sulaeman Indonesia</p>
+  </div>
+
+  <!-- INFO DONASI -->
+  <section>
+    <h2>Rekening Donasi</h2>
+    <p>
+      Donasi Anda akan digunakan untuk program pendidikan, sosial, dan kemanusiaan.
+    </p>
+
+    <div class="box">
+      <strong>Bank :</strong> BRI<br>
+      <strong>No. Rekening :</strong> 1234 01 000000 00<br>
+      <strong>Atas Nama :</strong> Yayasan Leman Sulaeman Indonesia
+    </div>
+
+    <p>
+      Setelah melakukan transfer, silakan konfirmasi melalui form di bawah
+      atau WhatsApp agar donasi dapat segera kami catat.
+    </p>
+  </section>
+
+  <!-- FORM DONASI -->
+  <section>
+    <h2>Form Konfirmasi Donasi</h2>
+
+    <form onsubmit="kirimWA(); return false;">
+      <input type="text" id="nama" placeholder="Nama Donatur" required>
+      <input type="text" id="wa" placeholder="Nomor WhatsApp" required>
+      <input type="number" id="nominal" placeholder="Nominal Donasi" required>
+      <textarea id="pesan" placeholder="Pesan / Keterangan"></textarea>
+
+      <button type="submit">Kirim Konfirmasi via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/62855807928459" class="wa-float" target="_blank">
+    WhatsApp
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Yayasan Leman Sulaeman Indonesia
+  </footer>
+
+  <!-- SCRIPT WA -->
+  <script>
+    function kirimWA() {
+      const nama = document.getElementById("nama").value;
+      const wa = document.getElementById("wa").value;
+      const nominal = document.getElementById("nominal").value;
+      const pesan = document.getElementById("pesan").value;
+
+      const text =
+        "Assalamualaikum,%0A" +
+        "Saya ingin konfirmasi donasi:%0A%0A" +
+        "Nama: " + nama + "%0A" +
+        "WhatsApp: " + wa + "%0A" +
+        "Nominal: Rp " + nominal + "%0A" +
+        "Pesan: " + pesan;
+
+      window.open(
+        "https://wa.me/62855807928459?text=" + text,
+        "_blank"
+      );
+    }
+  </script>
+
+</body>
+</html>
