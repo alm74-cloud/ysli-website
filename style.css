@@ -16,10 +16,10 @@ body {
 /* NAVBAR */
 nav {
   background: #8b0000;
-  padding: 2px 2px;                 /* PALING TIPIS */
+  padding: 8px 6px;                 /* MERAH LEBIH BESAR SEDIKIT */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
+  grid-template-columns: repeat(3, 1fr); /* 3 KOLOM = ±3 BARIS */
+  gap: 6px;
   text-align: center;
   position: sticky;
   top: 0;
@@ -27,13 +27,13 @@ nav {
 }
 
 nav a {
-  padding: 5px 4px;        /* naik dikit, tapi masih aman */
-  font-size: 15px;         /* JELAS TERBACA */
-  font-weight: 900;        /* PALING TEBAL */
+  padding: 6px 4px;                 /* TIDAK TERLALU TEBAL */
+  font-size: 15px;                  /* JELAS */
+  font-weight: 900;                 /* TEBAL */
   line-height: 1.15;
-  border-radius: 4px;
+  border-radius: 5px;
   color: #fff;
-  letter-spacing: 0.5px;  /* efek tulisan lebih kuat */
+  letter-spacing: 0.4px;
 }
 /* HEADER */
 .header {
