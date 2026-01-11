@@ -27,13 +27,13 @@ nav {
 }
 
 nav a {
-  padding: 4px 2px;        /* masih tipis */
-  font-size: 13.5px;       /* NAIK dikit */
-  font-weight: 800;        /* SANGAT TEBAL */
-  line-height: 1.1;
+  padding: 5px 4px;        /* naik dikit, tapi masih aman */
+  font-size: 15px;         /* JELAS TERBACA */
+  font-weight: 900;        /* PALING TEBAL */
+  line-height: 1.15;
   border-radius: 4px;
   color: #fff;
-  letter-spacing: 0.4px;  /* bikin lebih tegas */
+  letter-spacing: 0.5px;  /* efek tulisan lebih kuat */
 }
 /* HEADER */
 .header {
