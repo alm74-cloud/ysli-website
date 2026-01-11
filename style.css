@@ -166,4 +166,36 @@ section,
     font-size: 30px;
   }
 }
+section {
+  animation: fadeIn 0.8s ease both;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  }
+.box,
+.org-box {
+  transition: all 0.3s ease;
+}
+
+.box:hover,
+.org-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+.wa-float {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+  }
