@@ -4,115 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yayasan Leman Sulaeman Indonesia</title>
-
-  <style>
-    /* RESET */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* NAVBAR */
-    nav {
-      background: #8b0000;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 6px 10px;
-      border-radius: 6px;
-    }
-
-    nav a:hover {
-      background: rgba(255,255,255,0.2);
-    }
-
-    /* HEADER */
-    header {
-      background: #fff;
-      text-align: center;
-      padding: 30px 15px;
-    }
-
-    header h1 {
-      color: #8b0000;
-      margin-bottom: 8px;
-    }
-
-    /* SECTION */
-    section {
-      background: #fff;
-      margin: 20px;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    section h2 {
-      color: #8b0000;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
-    /* PROGRAM */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #fafafa;
-      padding: 18px;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-    }
-
-    .card h3 {
-      color: #8b0000;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    /* MAP */
-    iframe {
-      width: 100%;
-      height: 350px;
-      border: 0;
-      border-radius: 10px;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #8b0000;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- NAV -->
+  <!-- NAVBAR -->
   <nav>
     <a href="#tentang">Tentang</a>
     <a href="#program">Program</a>
@@ -120,18 +16,18 @@
   </nav>
 
   <!-- HEADER -->
-  <header>
-    <h1>Yayasan Leman Sulaeman Indonesia</h1>
+  <div class="header">
+    <h1>Yayasan Leman<br>Sulaeman Indonesia</h1>
     <p>Mengabdi untuk pendidikan, sosial, dan kemanusiaan</p>
-  </header>
+  </div>
 
   <!-- TENTANG -->
   <section id="tentang">
     <h2>Tentang Yayasan</h2>
     <p>
       Yayasan Leman Sulaeman Indonesia adalah lembaga sosial yang bergerak
-      di bidang pendidikan, sosial, dan kemanusiaan untuk membantu masyarakat
-      yang membutuhkan.
+      di bidang pendidikan, sosial, dan kemanusiaan untuk membantu
+      masyarakat yang membutuhkan.
     </p>
   </section>
 
@@ -139,34 +35,47 @@
   <section id="program">
     <h2>Program Yayasan</h2>
 
-    <div class="cards">
-      <div class="card">
-        <h3>📚 Pendidikan</h3>
-        <p>Bantuan pendidikan dan pendampingan belajar.</p>
-      </div>
+    <div class="box">
+      <h3>📚 Pendidikan</h3>
+      <p>
+        Bantuan pendidikan dan pendampingan belajar bagi anak-anak
+        dan masyarakat kurang mampu.
+      </p>
+    </div>
 
-      <div class="card">
-        <h3>🤝 Sosial</h3>
-        <p>Santunan dan bantuan sosial berkelanjutan.</p>
-      </div>
+    <div class="box">
+      <h3>❤️ Sosial</h3>
+      <p>
+        Kegiatan sosial untuk membantu masyarakat yang membutuhkan
+        melalui berbagai program kemanusiaan.
+      </p>
+    </div>
 
-      <div class="card">
-        <h3>🚑 Kemanusiaan</h3>
-        <p>Tanggap darurat dan bantuan bencana.</p>
-      </div>
+    <div class="box">
+      <h3>🤝 Kemanusiaan</h3>
+      <p>
+        Penyaluran bantuan dan aksi kemanusiaan bagi korban bencana
+        dan kondisi darurat.
+      </p>
     </div>
   </section>
 
   <!-- LOKASI -->
   <section id="lokasi">
     <h2>Lokasi Yayasan</h2>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.6173660475883!2d107.4449239!3d-6.3276177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69657ebe2b0bad%3A0x83f1bb4bc9b1264!2sYAYASAN%20LEMAN%20SULAEMAN%20INDONESIA!5e0!3m2!1sid!2sid!4v1700000000000">
+
+    <iframe
+      src="https://www.google.com/maps?q=Yayasan+Leman+Sulaeman+Indonesia&output=embed"
+      width="100%"
+      height="300"
+      style="border:0; border-radius:10px;"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer style="text-align:center; padding:20px; font-size:14px; color:#555;">
     © 2026 Yayasan Leman Sulaeman Indonesia
   </footer>
 
